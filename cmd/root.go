@@ -27,7 +27,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/jaegertracing/jaeger/examples/hotrod/services/config"
+	"hotrod/services/config"
 )
 
 var (
