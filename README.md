@@ -1,8 +1,6 @@
-# Hot R.O.D. - Rides on Demand
+# OpenTelemetry Hot R.O.D. - Rides on Demand
 
-This is a demo application that consists of several microservices and illustrates
-the use of the OpenTracing API. It can be run standalone, but requires Jaeger backend
-to view the traces. A tutorial / walkthough is available:
+This application is a full OpenTelemetry reimplementation of the infamous hotrod example proposed by YuriShkuro
   * as a blog post [Take OpenTracing for a HotROD ride][hotrod-tutorial],
   * as a video [OpenShift Commons Briefing: Distributed Tracing with Jaeger & Prometheus on Kubernetes][hotrod-openshift].
 
@@ -46,9 +44,7 @@ Jaeger UI can be accessed at http://localhost:16686.
 ### Run HotROD from source
 
 ```bash
-git clone git@github.com:jaegertracing/jaeger.git jaeger
-cd jaeger
-go run ./examples/hotrod/main.go all
+go run ./main.go all
 ```
 
 ### Run HotROD from docker
