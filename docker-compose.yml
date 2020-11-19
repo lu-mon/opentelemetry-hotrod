@@ -8,7 +8,8 @@ services:
     networks:
       - jaeger-example
   hotrod:
-    image: jaegertracing/example-hotrod:latest
+    build: .
+#    image: jaegertracing/example-hotrod:latest
     ports: 
       - "8080:8080"
     command: ["all"]
